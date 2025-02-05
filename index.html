@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <meta name="description" content="Hello, I'm Harry! Hobbyist Web Developer | Computer Science Student">
+    <meta property="og:image" content="./img/preview.png">
+    <title>HARRYNFR.XYZ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            background-color: rgb(243, 242, 235);
+            font-family: "Poppins", serif;
+            font-style: normal;
+            overflow: auto;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1b1d24;
+            color: #fff;
+            height: 7vh;
+            width: 100vw;
+        }
+        .navButtons {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 1em;
+        }
+        .navButtons p {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .mainContent {
+            height: 93vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .introSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #1b1d24;
+            height: 93vh;
+            width: 100vw;
+            padding: 0 8vw;
+        }
+        .introImage {
+            width: 25vw;
+        }
+        .introImage img {
+            width: 100%;
+            opacity: 0;
+            filter: sepia(1) saturate(50%) hue-rotate(180deg) brightness(75%);
+            transition: filter 0.5s ease;
+        }
+        .introImage img:hover {
+            filter: none;
+        }
+        .mainTitle {
+            font-size: 5vw;
+            font-family: "Permanent Marker", serif;
+            font-weight: 400;
+            opacity: 0;
+        }
+        .subTitle {
+            font-size: 1vw;
+            font-weight: 500;
+            color: #1b1d24;
+            opacity: 0;
+        }
+        .aboutSection {
+            height: 93vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 16vw;
+        }
+        .aboutContent {
+            font-size: 1.5vw;
+        }
+        .aboutContent p {
+            opacity: 0;
+        }
+        #homeButton {
+            cursor: pointer;
+        }
+        .photographySection {
+            height: 93vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .regularPhotography {
+            display: flex;
+            justify-content: space-between;
+            width: 93vw;
+        }
+        .regularPhotography img {
+            width: 20vw;
+            filter: sepia(1) saturate(50%) hue-rotate(180deg) brightness(75%);
+            transition: filter 0.5s ease;
+        }
+        .regularPhotography img:hover {
+            filter: none;
+        }
+        .rawPhotographySection {
+            height: 93vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rawPhotography {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 85vw;
+        }
+        .rawPhotography img {
+            width: 20vw;
+            padding: 2vw;
+            opacity: 0;
+            filter: sepia(1) saturate(50%) hue-rotate(180deg) brightness(75%);
+            transition: filter 0.5s ease;
+        }
+        .rawPhotography img:hover {
+            filter: none;
+        }
+        .description {
+            width: 20vw;
+            padding: 2vw;
+            opacity: 0;
+            font-size: 1vw;
+        }
+        .contactSection {
+            height: 93vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .contactSection p {
+            font-size: 1vw;
+            padding: 2vw;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p id="homeButton">HARRYNFR.XYZ</p>
+        <div class="navButtons">
+            <p id="aboutButton">ABOUT</p>
+            <p id="photographyButton">PHOTOGRAPHY</p>
+            <p id="contactButton">CONTACT</p>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="introSection">
+            <div class="introTitle">
+                <p class="mainTitle">Hello, I'm Harry!</p>
+                <p class="subTitle">Hobbyist Web Developer | Computer Science Student</p>
+            </div>
+            <div class="introImage">
+                <img src="./img/me.jpg" alt="me">
+            </div>
+        </div>
+        <div class="aboutSection">
+            <div class="aboutContent">
+                <p>My name is Harry. I'm 17 years old, I live in Great Britain and I'm currently studying computer science at college. I am interested in front-end web development, but I soon hope to branch out to some low level programming languages such as Rust and languages in the C family.</p>
+                <br>
+                <p>I don't have any projects yet, unless you count this website. But if I do eventually fully commit to development and programming you'll be sure to see my projects listed here. However as that day has yet to come, this website is a little bare. </p>
+                <br>
+                <p>Outside of computing I'm into photography, kayaking, and biking. I don't photograph as much as I used to, but when I do, I have a particular interest in animals and wildlife. Some of my old photos can be seen below.</p>
+            </div>  
+        </div>
+        <div class="photographySection">
+            <div class="regularPhotography">
+                <img src="./img/photography1.jpg">
+                <img src="./img/photography2.jpg">
+                <img src="./img/photography3.jpg">
+                <img src="./img/photography4.jpg">
+            </div>
+        </div>
+        <div class="rawPhotographySection">
+            <div class="rawPhotography">
+                <img src="./img/raw1.jpg">
+                <img src="./img/raw2.jpg">
+                <img src="./img/raw3.jpg">
+                <img src="./img/raw4.jpeg">
+                <img src="./img/raw5.jpeg">
+                <img src="./img/raw6.jpeg">
+                <img src="./img/raw7.jpeg">
+                <div class="description">
+                    <p>These photos are RAW, in other words unedited. I never got around to editing these, and have since lost the majority of my passion for photography.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactSection">
+            <p class="contactTitle">CONTACT</p>
+            <p>Email me at <a href="mailto:harrynfr@mailfence.com">harrynfr@mailfence.com</a> for general enquiries, or if you just want to reach out.</p>
+            <p>Or feel free to message me on Discord. On Discord I go by <a href="https://discord.com/users/510362447060664321">HarryNFR</a>.</p>
+            <p>Alternatively, you can check out my GitHub, to view and mock the code for this site. Or view any future projects I might start. On GitHub I also go by <a href="https://github.com/harrynfr">HarryNFR</a>.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script>
+        let currentSection = 0;
+        let isScrolling = false;
+        const sections = document.querySelectorAll('.mainContent > div');
+        const mainContainer = document.querySelector('.mainContent');
+
+        gsap.from("#homeButton, .navButtons p", {
+            delay: 0.25,
+            duration: 0.25,
+            opacity: 0,
+            stagger: 0.1,
+        });
+
+        const animateIntro = () => {
+            gsap.fromTo(".introImage img, .mainTitle, .subTitle", {opacity: 0}, {duration: 1, opacity: 1, stagger: 0.5});
+        };
+
+        const animateAbout = () => {
+            gsap.fromTo(".aboutContent p", {opacity: 0}, {duration: 1, opacity: 1, stagger: 0.5});
+        };
+
+        const animatePhotography = () => {
+            gsap.fromTo(".regularPhotography img", {opacity: 0}, {duration: 0.5, opacity: 1, stagger: 0.25});
+        };
+
+        const animateRawPhotography = () => {
+            gsap.fromTo(".rawPhotography img, .description", {opacity: 0}, {duration: 0.25, opacity: 1, stagger: 0.175});
+        };
+
+        const animateContact = () => {
+            gsap.fromTo(".contactSection p", {opacity: 0}, {duration: 0.5, opacity: 1, stagger: 0.25});
+        };
+
+        const resetOpacity = () => {
+            gsap.killTweensOf(".introImage img, .mainTitle, .subTitle, .aboutContent p, .regularPhotography img, .rawPhotography img, .description, .contactSection p");
+            gsap.to(".introImage img, .mainTitle, .subTitle, .aboutContent p, .regularPhotography img, .rawPhotography img, .description, .contactSection p", {opacity: 0, delay: 0.5});
+        };
+
+        const scrollToSection = (index) => {
+            isScrolling = true;
+            resetOpacity();
+            gsap.to(mainContainer, {
+                duration: 1,
+                scrollTo: sections[index],
+                ease: "power2.inOut",
+                onComplete: () => {
+                    isScrolling = false;
+                    if (index === 0) {
+                        animateIntro();
+                    } else if (index === 1) {
+                        animateAbout();
+                    } else if (index === 2) {
+                        animatePhotography();
+                    } else if (index === 3) {
+                        animateRawPhotography();
+                    } else if (index === 4) {
+                        animateContact();
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('wheel', (event) => {
+            if (isScrolling) return;
+            if (event.deltaY > 0 && currentSection < sections.length - 1) {
+                currentSection++;
+                scrollToSection(currentSection);
+            } else if (event.deltaY < 0 && currentSection > 0) {
+                currentSection--;
+                scrollToSection(currentSection);
+            }
+        });
+
+        document.getElementById('homeButton').addEventListener('click', () => {
+            currentSection = 0;
+            scrollToSection(currentSection);
+        });
+
+        document.getElementById('aboutButton').addEventListener('click', () => {
+            currentSection = 1;
+            scrollToSection(currentSection);
+        });
+
+        document.getElementById('photographyButton').addEventListener('click', () => {
+            currentSection = 2;
+            scrollToSection(currentSection);
+        });
+
+        document.getElementById('contactButton').addEventListener('click', () => {
+            currentSection = 4;
+            scrollToSection(currentSection);
+        });
+
+        window.addEventListener('load', () => {
+            scrollToSection(0);
+        });
+
+        window.addEventListener('resize', () => {
+            scrollToSection(0);
+        });
+    </script>
+</body>
+</html>
